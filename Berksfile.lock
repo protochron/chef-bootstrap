@@ -1,6 +1,7 @@
 DEPENDENCIES
   apt
   docker
+  git
   htop
   lxc
   rvm

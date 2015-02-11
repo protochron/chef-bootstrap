@@ -3,15 +3,17 @@
   "json_class": "Chef::Role",
   "tz": "UTC",
   "default_attributes": {
-    "docker": {
-      "package": {
-        "repo_url": "https://get.docker.io/ubuntu"
-      }
-    },
     "rvm": {
       "rubies": [
         "ruby-2.2.0"
       ]
+    }
+  },
+  "override_attributes": {
+    "docker": {
+      "package": {
+        "repo_url": "https://get.docker.io/ubuntu"
+      }
     }
   },
   "run_list": [

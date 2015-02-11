@@ -16,6 +16,6 @@ task "create", [:server_name] do |t, args|
 
   keys = ENV['DIGITAL_OCEAN_SSH_KEYS']
 
-  cmd = "knife digital_ocean droplet create -N #{args[:server_name]} -S 1gb -L nyc3 -I ubuntu-14-10-x64 -K #{keys} --solo --run-list 'role[node]'"
+  cmd = "knife digital_ocean droplet create -N #{args[:server_name]} -S 1gb -L nyc3 -I ubuntu-14-04-x64 -K #{keys} --solo --run-list 'role[node]'"
   puts cmd
 end
